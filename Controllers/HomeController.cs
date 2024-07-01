@@ -31,6 +31,12 @@ namespace Ticking_System_Interview_Exam.Controllers
             return bugsController.Index();
         }
 
+        public Task<IActionResult> RD_index()
+        {
+            BugsController bugsController = new BugsController(_context);
+            return bugsController.Index();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
