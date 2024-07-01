@@ -10,7 +10,7 @@ using Ticking_System_Interview_Exam.Models;
 
 namespace Ticking_System_Interview_Exam.Controllers
 {
-    public class BugsController : Controller
+    public class BugsController : Controller  //new branch
     {
         private readonly Ticking_System_Interview_ExamContext _context;
 
