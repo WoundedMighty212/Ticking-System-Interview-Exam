@@ -25,6 +25,11 @@ namespace Ticking_System_Interview_Exam.Controllers
             return View(await _context.Bug.ToListAsync());
         }
 
+        public async Task<IActionResult> RD_Index()
+        {
+            return View(await _context.Bug.ToListAsync());
+        }
+
         // GET: Bugs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
